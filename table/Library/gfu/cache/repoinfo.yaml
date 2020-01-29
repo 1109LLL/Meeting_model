@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-01-28T14:24:57.614+00:00
-  initializedAtString: 2020-01-28T14:24:57.614+00:00
+  lastUpdatedAtString: 2020-01-29T18:58:09.654+00:00
+  initializedAtString: 2020-01-29T18:58:09.654+00:00
   currentGitRemote:
-    name: 
-    url: 
+    name: origin
+    url: https://github.com/1109LLL/Meeting_model.git
     login: 
     user: 
     host: 
@@ -33,6 +33,6 @@ MonoBehaviour:
       url: 
     trackingBranch: 
   currentConfigRemote:
-    name: 
-    url: 
+    name: origin
+    url: https://github.com/1109LLL/Meeting_model.git
   currentHead: 
