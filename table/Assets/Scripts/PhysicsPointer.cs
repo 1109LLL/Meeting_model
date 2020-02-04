@@ -13,7 +13,8 @@ public class PhysicsPointer : MonoBehaviour
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
         lineRenderer.receiveShadows = false;
-        lineRenderer.widthMultiplier = 0.02f;
+        lineRenderer.widthMultiplier = 0.01f;
+        lineRenderer.sortingLayerName = "Foreground";
     }
 
     private void Update()

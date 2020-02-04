@@ -1,13 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - CanvasPointer
     - ONSPSettings
-    - OnHover
     - PhysicsPointer
     - PointerEvents
-    - VRRaycaster
-    - VR_Input
+    - VRInput
     GitHub.Unity.45.dll:
     - GitHub.Unity.ApplicationCache
     - GitHub.Unity.EnvironmentCache
@@ -20,18 +17,11 @@ ScriptsOnlyBuild:
     Oculus.VR.dll:
     - OVRCameraRig
     - OVRControllerHelper
-    - OVRDebugInfo
     - OVRHeadsetEmulator
     - OVRManager
-    - OVRPlayerController
     - OVRRaycaster
-    - OVRSceneSampleController
-    - OVRScreenFade
-    - UnityEngine.EventSystems.OVRPhysicsRaycaster
     ProBuilderCore-Unity5.dll:
     - ProBuilder2.Common.pb_PreferenceDictionary
-    - pb_Entity
-    - pb_Object
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
     - TMPro.TMP_Settings
@@ -94,49 +84,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9976}
     - Class: 114
-      Script: {instanceID: 10184}
+      Script: {instanceID: 10186}
     - Class: 114
-      Script: {instanceID: 10206}
+      Script: {instanceID: 10208}
     - Class: 114
-      Script: {instanceID: 10262}
+      Script: {instanceID: 10264}
     - Class: 114
-      Script: {instanceID: 10288}
+      Script: {instanceID: 10290}
     - Class: 114
-      Script: {instanceID: 10446}
+      Script: {instanceID: 10448}
     - Class: 114
-      Script: {instanceID: 10662}
+      Script: {instanceID: 10664}
     - Class: 114
-      Script: {instanceID: 10744}
+      Script: {instanceID: 10746}
     - Class: 114
-      Script: {instanceID: 10854}
+      Script: {instanceID: 10856}
     - Class: 114
-      Script: {instanceID: 10894}
+      Script: {instanceID: 10896}
     - Class: 114
-      Script: {instanceID: 10978}
+      Script: {instanceID: 10980}
     - Class: 114
-      Script: {instanceID: 11324}
+      Script: {instanceID: 11356}
     - Class: 114
-      Script: {instanceID: 11560}
+      Script: {instanceID: 11566}
     - Class: 114
-      Script: {instanceID: 11902}
+      Script: {instanceID: 11908}
     - Class: 114
-      Script: {instanceID: 11916}
+      Script: {instanceID: 11922}
     - Class: 114
-      Script: {instanceID: 11934}
+      Script: {instanceID: 11940}
     - Class: 114
-      Script: {instanceID: 12134}
+      Script: {instanceID: 12284}
     - Class: 114
-      Script: {instanceID: 12278}
+      Script: {instanceID: 12332}
     - Class: 114
-      Script: {instanceID: 12326}
+      Script: {instanceID: 12524}
     - Class: 114
-      Script: {instanceID: 12518}
+      Script: {instanceID: 12832}
     - Class: 114
-      Script: {instanceID: 12826}
-    - Class: 114
-      Script: {instanceID: 21004}
-    - Class: 114
-      Script: {instanceID: 21250}
+      Script: {instanceID: 28506}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -818,6 +804,12 @@ ScriptsOnlyBuild:
     className: ONSPReflectionZone
   - hash:
       serializedVersion: 2
+      Hash: 029618f61d9c308902e445a7b7d14522
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CanvasPointer
+  - hash:
+      serializedVersion: 2
       Hash: 2d75dd1753213123772f51e8448cd92e
     assemblyName: Assembly-CSharp.dll
     namespaceName: Oculus.Platform.Samples.VrBoardGame
@@ -884,12 +876,6 @@ ScriptsOnlyBuild:
     className: P2PNetworkBall
   - hash:
       serializedVersion: 2
-      Hash: 083b58e5835bd81a98f070b8e3a55d27
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: VR_Input
-  - hash:
-      serializedVersion: 2
       Hash: 22dc216204f0e65ce2161bd7b6ecf06b
     assemblyName: Oculus.VR.dll
     namespaceName: 
@@ -912,6 +898,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: OculusSampleFramework
     className: OVROverlaySample
+  - hash:
+      serializedVersion: 2
+      Hash: 029618f61d9c308902e445a7b7d14522
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PhysicsPointer
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1466,12 +1458,6 @@ ScriptsOnlyBuild:
     className: OvrAvatarMaterialManager
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Button_selection
-  - hash:
-      serializedVersion: 2
       Hash: a2fe3324c62d6e3b2308e2685afbb0f5
     assemblyName: Oculus.VR.dll
     namespaceName: 
@@ -1566,12 +1552,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
-  - hash:
-      serializedVersion: 2
-      Hash: 0f9d8ee6bde9982eb1787b29262160b6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Leave_meeting_button
   - hash:
       serializedVersion: 2
       Hash: b00ce1f32326f1cd1160488ffd14965a
@@ -1856,6 +1836,12 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
+      Hash: 029618f61d9c308902e445a7b7d14522
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pointer
+  - hash:
+      serializedVersion: 2
       Hash: 18235af34262c9d1c806370a73196694
     assemblyName: Assembly-CSharp.dll
     namespaceName: OculusSampleFramework
@@ -1872,24 +1858,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: VRInput
-  - hash:
-      serializedVersion: 2
-      Hash: 029618f61d9c308902e445a7b7d14522
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CanvasPointer
-  - hash:
-      serializedVersion: 2
-      Hash: 029618f61d9c308902e445a7b7d14522
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Pointer
-  - hash:
-      serializedVersion: 2
-      Hash: 029618f61d9c308902e445a7b7d14522
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PhysicsPointer
   platform: 13
   scenePathNames:
   - Assets/Scenes/Round_table.unity
