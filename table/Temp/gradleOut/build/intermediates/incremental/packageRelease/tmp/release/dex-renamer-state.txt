@@ -1,0 +1,4 @@
+#Tue Feb 11 15:37:19 GMT 2020
+base.0=/Users/yingming/Desktop/COM16-HCI/VR meeting environment-Coursework/UnityMeetingModel/table/Temp/gradleOut/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex

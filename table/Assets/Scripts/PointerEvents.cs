@@ -10,6 +10,8 @@ public class PointerEvents : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     [SerializeField] private Color enterColor = Color.white;
     [SerializeField] private Color downColor = Color.white;
     [SerializeField] private UnityEvent OnClick = new UnityEvent();
+    // [SerializeField] private UnityEvent OnDown = new UnityEvent();
+    // [SerializeField] private UnityEvent OnRelease = new UnityEvent();
 
     private MeshRenderer meshRenderer = null;
 
@@ -33,12 +35,14 @@ public class PointerEvents : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public void OnPointerDown(PointerEventData eventData)
     {
         meshRenderer.material.color = downColor;
+        // OnDown.Invoke();
         // print("Down");
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
         meshRenderer.material.color = enterColor;
+        // OnRelease.Invoke();
         // print("Up");
     }
 
