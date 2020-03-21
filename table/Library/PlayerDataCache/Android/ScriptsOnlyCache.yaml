@@ -2109,4 +2109,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/room.unity
-  playerPath: /Users/yingming/Desktop/COM16-HCI/VR meeting environment-Coursework/UnityMeetingModel/table/keyboard.apk
+  playerPath: /Users/yingming/Desktop/COM16-HCI/VR meeting environment-Coursework/UnityMeetingModel/table/VRMeeting_Environment.apk
