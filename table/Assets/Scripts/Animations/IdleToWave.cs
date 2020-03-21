@@ -5,8 +5,9 @@ using UnityEngine;
 public class IdleToWave : MonoBehaviour
 {
     public Animator animator;
-    float InputX;
+    // float InputX;
     public float InputY;
+    public bool Wave; 
 
     // Start is called before the first frame update
     void Start()
@@ -24,11 +25,21 @@ public class IdleToWave : MonoBehaviour
 
     public void startWaving()
     {
-        animator.SetFloat("InputY", -1);
+        animator.SetBool("Wave", true);
     }
 
     public void stopWaving()
     {
-        animator.SetFloat("InputY", 0);
+        animator.SetBool("Wave", false);
+    }
+
+    public void startThumbsUp()
+    {
+        animator.SetBool("ThumbsUp", true);
+    }
+
+    public void stopThumbsDown()
+    {
+        animator.SetBool("ThumbsUp", false);
     }
 }

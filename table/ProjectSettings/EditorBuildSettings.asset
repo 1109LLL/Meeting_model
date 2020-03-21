@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Round_table.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Main.unity
     guid: 9fdc519cf5dff4b93916d25817e5f096
+  - enabled: 1
+    path: Assets/Scenes/room.unity
+    guid: e435c141ac151431ca55ee715deb9b41
+  - enabled: 0
+    path: Assets/VRKeys/Scenes/Example Scene.unity
+    guid: a34a374857facec4b8beb240f59fbe4f
   m_configObjects: {}
