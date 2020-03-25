@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-03-21T09:47:34.939+00:00
-  initializedAtString: 2020-03-21T09:47:34.939+00:00
+  lastUpdatedAtString: 2020-03-24T15:26:13.162+00:00
+  initializedAtString: 2020-03-23T11:10:25.596+00:00
   currentGitRemote:
     name: origin
     url: https://github.com/1109LLL/Meeting_model.git
