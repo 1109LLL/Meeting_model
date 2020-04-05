@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Selectable
+  - Auth_token
+  - uuid
   layers:
   - Default
   - TransparentFX

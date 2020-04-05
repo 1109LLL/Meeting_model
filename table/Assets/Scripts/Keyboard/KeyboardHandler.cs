@@ -13,7 +13,7 @@ public class KeyboardHandler : MonoBehaviour
     public GameObject username_keyboard;
     public GameObject password_keyboard;
     public TextMeshProUGUI Inputfield;
-    private int number = 0;
+
     private const float DEBOUNCE_TIME_S = 0.23f;
     private float timeLeft = 0.0f;
     void start()

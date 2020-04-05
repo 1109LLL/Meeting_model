@@ -9,12 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Round_table.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
-    path: Assets/Oculus/VR/Scenes/GearVrControllerTest.unity
-    guid: d56af3aeb2176e7459f753c1c2e2dd97
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
     path: Assets/Scenes/Main.unity
     guid: 9fdc519cf5dff4b93916d25817e5f096
   - enabled: 1
