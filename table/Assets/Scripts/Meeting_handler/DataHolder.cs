@@ -19,10 +19,6 @@ public class DataHolder : MonoBehaviour
         login_id.text = id_0;
 
     }
-    // void Awake()
-    // {
-    //     DontDestroyOnLoad(this.gameObject);
-    // }
 
     // Update is called once per frame
     void Update()

@@ -3,9 +3,11 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - ButtonDebounce
     - DataHolder
+    - GetPresentation
     - IdleToWave
     - InitiateMeeting
     - KeyboardHandler
+    - LeaveMeeting
     - LogOut
     - Login
     - MenuOpener
@@ -55,6 +57,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/LoginPage.unity:
@@ -226,8 +229,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10482}
     - Class: 114
-      Script: {instanceID: 10522}
-    - Class: 114
       Script: {instanceID: 10700}
     - Class: 114
       Script: {instanceID: 10898}
@@ -241,6 +242,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11410}
     - Class: 114
       Script: {instanceID: 11620}
+    - Class: 114
+      Script: {instanceID: 11652}
     - Class: 114
       Script: {instanceID: 11976}
     - Class: 114
@@ -257,6 +260,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 84240}
     - Class: 114
       Script: {instanceID: 177472}
+    - Class: 114
+      Script: {instanceID: 312380}
+    - Class: 114
+      Script: {instanceID: 318372}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -1816,7 +1823,7 @@ ScriptsOnlyBuild:
     className: CowController
   - hash:
       serializedVersion: 2
-      Hash: 73c30303a6a3f53db1792a0054225805
+      Hash: fb90eddc34257b394210580e5541786c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LogOut
@@ -2122,10 +2129,22 @@ ScriptsOnlyBuild:
     className: DataHolder
   - hash:
       serializedVersion: 2
-      Hash: fb90eddc34257b394210580e5541786c
+      Hash: 69870bc0ed0944f7c20de15dad74f115
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InitiateMeeting
+  - hash:
+      serializedVersion: 2
+      Hash: 69870bc0ed0944f7c20de15dad74f115
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LeaveMeeting
+  - hash:
+      serializedVersion: 2
+      Hash: acc310c3d819647317038b284f8d2450
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GetPresentation
   platform: 13
   scenePathNames:
   - Assets/Scenes/LoginPage.unity

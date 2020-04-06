@@ -17,9 +17,11 @@ class initiate_success
 }
 public class InitiateMeeting : MonoBehaviour
 {
+    public TextMeshProUGUI meetingID;
     public TextMeshProUGUI login_token;
     public TextMeshProUGUI login_id;
     public TextMeshProUGUI feedback;
+    
     private const float DEBOUNCE_TIME_S = 0.23f;
     private float timeLeft = 0.0f;
     void start()
@@ -63,8 +65,7 @@ public class InitiateMeeting : MonoBehaviour
         string url = "http://192.168.0.9:8080/meetings";
 
         UnityWebRequest webRequest = new UnityWebRequest(url, "POST");
-        // byte[] encodedPayload = new System.Text.UTF8Encoding().GetBytes(json_payload);
-        // webRequest.uploadHandler = (UploadHandler) new UploadHandlerRaw(encodedPayload);
+
         webRequest.downloadHandler = (DownloadHandler) new DownloadHandlerBuffer();
         webRequest.SetRequestHeader("Content-Type", "application/json");
         webRequest.SetRequestHeader("Authorization", "Bearer " + encodedText);
@@ -75,16 +76,19 @@ public class InitiateMeeting : MonoBehaviour
 		{
 			Debug.Log("ERROR: "+ webRequest.error);
             Debug.Log("Initiate meeting failed");
-            feedback.text = "Initiate meeting  failed";
-
+            feedback.text = "Initiate meeting failed :: "+webRequest.responseCode + " :: " +webRequest.error;
 			yield break;
 		}
         
+        byte[] buffer = webRequest.downloadHandler.data;
+        string json = System.Text.Encoding.UTF8.GetString(buffer);
+        var result = JsonUtility.FromJson<initiate_success>(json);
+
         if (webRequest.responseCode == 201)
         {
             feedback.text = "Initiate meeting successful";
+            meetingID.text = result.meeting_id;
             Debug.Log("Initiate meeting SUCCESS!");
-            yield break;
         }
         yield break;
     }

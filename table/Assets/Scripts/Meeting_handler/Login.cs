@@ -41,12 +41,6 @@ public class Login : MonoBehaviour
         }
     }
 
-    // void Awake()
-    // {
-    //     DontDestroyOnLoad(login_id);
-    //     DontDestroyOnLoad(login_token);
-    // }
-
     public void Login_verification()
     {
         if (timeLeft > 0.0f)
@@ -93,13 +87,10 @@ public class Login : MonoBehaviour
         var result = JsonUtility.FromJson<login_success_token>(json);
         if(result.auth_token != "" && result.user_id != "")
         {
-            Debug.Log("SUCCESSFUL!");
-            Debug.Log("auth_token = "+result.auth_token);
-            Debug.Log("user_id = "+ result.user_id);
+            Debug.Log("Login SUCCESSFUL!");
 
             login_token.text = result.auth_token;
             login_id.text = result.user_id;
-            Debug.Log("login_token text :: "+login_token.text);
             notification_board_success.SetActive(true);
         }
         yield break;
